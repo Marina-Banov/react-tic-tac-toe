@@ -1,0 +1,23 @@
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  line-height: 64px;
+}
+
+.start-again-button-holder {
+  margin-top: 15px;
+  min-height: 45px;
+}
+
+.start-again-button {
+  padding: 8px 20px;
+  font-size: calc(10px + 1.25vmin);
+}

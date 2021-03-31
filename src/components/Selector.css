@@ -1,0 +1,30 @@
+.game-mode-button-holder {
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.game-mode-button {
+    display: block;
+    margin: 5px;
+    padding: 8px;
+    font-size: 12px;
+    opacity: .4;
+    transition: 200ms;
+}
+
+.active {
+    opacity: 1;
+}
+
+@media screen and (max-width: 500px) {
+    .game-mode-button-holder {
+        flex-direction: row;
+    }
+    .game-mode-button {
+        width: 120px;
+    }
+}
