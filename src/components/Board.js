@@ -4,8 +4,11 @@ import logo_red from "../assets/logo_red.svg";
 import Square from "./Square";
 import { useEffect, useState } from "react";
 import usePrevious from "../hooks/usePrevious";
+import { useSelector } from "react-redux";
+import { selectMode } from "../slices/PvPModeSlice";
 
-export default function Board({ activePvP }) {
+export default function Board() {
+    const activePvP = useSelector(selectMode);
     const prevActivePvP = usePrevious(activePvP);
     const [squares, setSquares] = useState(Array(9).fill(null));
     const [xIsNext, setXIsNext] = useState(true);
